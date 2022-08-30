@@ -99,13 +99,13 @@
         <button class="bg-white text-indigo-700 font-extrabold self-stretch lg:self-start">Start Free Trial</button>
       </div>
       <div class="mt-7 h-80 lg:h-full max-w-xl flex-grow">
-        <img class="object-cover rounded-t h-full w-full" src="./assets/Page Image.png" alt="">
+        <img class="object-cover rounded-t h-full w-full" src="./assets/Page_Image.png" alt="">
       </div>
     </section>
     <section id="testimonial" class="flex flex-col lg:flex-row gap-6">
       <div class="flex flex-col gap-4 text-left border border-slate-300 dark:border-none dark:bg-indigo-600 rounded p-5 mb-10 lg:mb-0">
         <div class="flex items-center gap-3">
-          <img class="h-10 rounded-full" src="./assets/User Avatar.svg" alt="">
+          <img class="h-10 rounded-full" src="./assets/User_Avatar.svg" alt="">
           <div>
             <p class="font-semibold text-indigo-700 dark:text-white">Sarah Andrews</p>
             <p class="dark:font-light">$100k in revenue</p>
@@ -116,7 +116,7 @@
       </div>
       <div class="flex flex-col gap-4 text-left border border-slate-300 dark:border-none dark:bg-indigo-600 rounded p-5 mb-10 lg:mb-0">
         <div class="flex items-center gap-3">
-          <img class="h-10 rounded-full" src="./assets/User Avatar 2.svg" alt="">
+          <img class="h-10 rounded-full" src="./assets/User_Avatar_2.svg" alt="">
           <div>
             <p class="font-semibold text-indigo-700 dark:text-white">Mathew Higgins</p>
             <p class="font-light">$20k in revenue</p>
@@ -127,7 +127,7 @@
       </div>
       <div class="flex flex-col gap-4 text-left border border-slate-300 dark:border-none dark:bg-indigo-600 rounded p-5">
         <div class="flex items-center gap-3">
-          <img class="h-10 rounded-full" src="./assets/User Avatar 32.svg" alt="">
+          <img class="h-10 rounded-full" src="./assets/User_Avatar_32.svg" alt="">
           <div>
             <p class="font-semibold text-indigo-700 dark:text-white">Janice Dave</p>
             <p class="font-light">$30k in revenue</p>
