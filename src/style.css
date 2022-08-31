@@ -12,6 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  transition: background 1s cubic-bezier(0.4, 0, 0.2, 1), color 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 :root.dark {
@@ -22,6 +23,7 @@
 a {
   font-weight: 500;
   text-decoration: inherit;
+  transition: color .5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 a:hover {
   color: #747bff;
@@ -65,6 +67,7 @@ button.dark {
 }
 button:hover {
   border-color: #646cff;
+  transition: transform .5s ease-out;
 }
 button:focus,
 button:focus-visible {

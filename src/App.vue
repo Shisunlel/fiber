@@ -23,7 +23,7 @@
             <button class="bg-indigo-700 text-white">Sign Up</button>
           </div>
           <div class="block sm:hidden cursor-pointer" @click="toggleNav">
-            <svg class="text-black dark:text-white" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="text-black dark:text-white transition-colors duration-1000" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M24 4H0V0H24V4ZM24 8H0V12H24V8ZM24 16H0V20H24V16Z" fill="currentColor"/>
             </svg>
           </div>
@@ -70,7 +70,7 @@
       </div>
     </div>
   </header>
-  <main class="bg-white dark:bg-stone-800 px-8 py-16 sm:px-16 2xl:px-80">
+  <main class="bg-white dark:bg-stone-800 transition-colors duration-1000  px-8 py-16 sm:px-16 2xl:px-80">
     <section id="why-us" class="text-left">
       <span class="main-text font-bold">Why Fiber?</span>
       <h1 class="heading pt-4 pb-6 max-w-xl">A good portfolio means good employability.</h1>
@@ -103,38 +103,38 @@
       </div>
     </section>
     <section id="testimonial" class="flex flex-col lg:flex-row gap-6">
-      <div class="flex flex-col gap-4 text-left border border-slate-300 dark:border-none dark:bg-indigo-600 rounded p-5 mb-10 lg:mb-0">
+      <div class="flex flex-col gap-4 text-left border border-slate-300 dark:border-none dark:bg-indigo-600 rounded p-5 mb-10 lg:mb-0 transition-colors duration-1000 ">
         <div class="flex items-center gap-3">
           <img class="h-10 rounded-full" src="./assets/User_Avatar.svg" alt="">
           <div>
-            <p class="font-semibold text-indigo-700 dark:text-white">Sarah Andrews</p>
-            <p class="dark:font-light">$100k in revenue</p>
+            <p class="font-semibold text-indigo-700 dark:text-white transition-colors duration-1000 ">Sarah Andrews</p>
+            <p class="font-light">$100k in revenue</p>
           </div>
         </div>
         <p class="w-[95%]">Setting up my portfolio with Fiber took no more than 10 minutes. Since then, my portfolio has attracted a lot of clients and made me more than $100k.</p>
-        <button class="bg-transparent b text-indigo-700 font-semibold border-slate-300 dark:border-slate-400 dark:text-white">View Sarah's Portfolio</button>
+        <button class="bg-transparent text-indigo-700 font-semibold border-slate-300 dark:border-slate-400 dark:text-white hover:scale-105 transition-colors duration-1000 ">View Sarah's Portfolio</button>
       </div>
-      <div class="flex flex-col gap-4 text-left border border-slate-300 dark:border-none dark:bg-indigo-600 rounded p-5 mb-10 lg:mb-0">
+      <div class="flex flex-col gap-4 text-left border border-slate-300 dark:border-none dark:bg-indigo-600 rounded p-5 mb-10 lg:mb-0 transition-colors duration-1000 ">
         <div class="flex items-center gap-3">
           <img class="h-10 rounded-full" src="./assets/User_Avatar_2.svg" alt="">
           <div>
-            <p class="font-semibold text-indigo-700 dark:text-white">Mathew Higgins</p>
+            <p class="font-semibold text-indigo-700 dark:text-white transition-colors duration-1000 ">Mathew Higgins</p>
             <p class="font-light">$20k in revenue</p>
           </div>
         </div>
         <p class="w-[95%]">I have been getting A LOT of leads ever since I used Fiber's premade templates, now I just need to work on my case studies and I'll be ready to go!</p>
-        <button class="bg-transparent text-indigo-700 font-semibold border-slate-300 dark:border-slate-400 dark:text-white">View Mathew's Portfolio</button>
+        <button class="bg-transparent text-indigo-700 font-semibold border-slate-300 dark:border-slate-400 dark:text-white hover:scale-105 transition-colors duration-1000 ">View Mathew's Portfolio</button>
       </div>
-      <div class="flex flex-col gap-4 text-left border border-slate-300 dark:border-none dark:bg-indigo-600 rounded p-5">
+      <div class="flex flex-col gap-4 text-left border border-slate-300 dark:border-none dark:bg-indigo-600 rounded p-5 transition-colors duration-1000 ">
         <div class="flex items-center gap-3">
           <img class="h-10 rounded-full" src="./assets/User_Avatar_32.svg" alt="">
           <div>
-            <p class="font-semibold text-indigo-700 dark:text-white">Janice Dave</p>
+            <p class="font-semibold text-indigo-700 dark:text-white transition-colors duration-1000 ">Janice Dave</p>
             <p class="font-light">$30k in revenue</p>
           </div>
         </div>
         <p class="w-[91%]">I only just stated freelancing this year and I have already made more than I ever made in my full-time job. The templates are just so amazing.</p>
-        <button class="bg-transparent text-indigo-700 font-semibold border-slate-300 dark:border-slate-400 dark:text-white">View Sarah's Portfolio</button>
+        <button class="bg-transparent text-indigo-700 font-semibold border-slate-300 dark:border-slate-400 dark:text-white hover:scale-105 transition-colors duration-1000 ">View Janice's Portfolio</button>
       </div>
     </section>
   </main>
@@ -207,10 +207,10 @@
 </template>
 <style lang="postcss">
 #mobile-nav > ul > li:hover, #mobile-nav > ul > li:active {
-  @apply text-indigo-700;
+  @apply text-indigo-700 transition-colors duration-500;
 }
 .main-text {
-  @apply text-indigo-700 dark:text-indigo-500;
+  @apply text-indigo-700 dark:text-indigo-500 transition-colors duration-1000 ;
 }
 .heading {
   @apply text-left text-4xl font-semibold leading-[3rem];
