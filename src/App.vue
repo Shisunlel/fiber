@@ -1,5 +1,5 @@
 <template>
-  <button @click="toggleDark" class="fixed h-15 w-15 bottom-8 right-8 bg-indigo-700 text-white p-2 rounded-full hover:bg-indigo-800">
+  <button @click="toggleDark" class="fixed h-15 w-15 bottom-8 right-8 bg-teal-700 dark:bg-teal-600 transition-colors duration-1000 text-white p-2 rounded-full hover:bg-teal-800">
     <svg id="light-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hidden">
       <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
     </svg>
@@ -11,7 +11,7 @@
     <nav>
       <div class="flex items-center justify-between">
           <div>
-            <a href="#" class="text-2xl font-extrabold">Fiber</a>
+            <a href="/" class="text-2xl font-extrabold">Fiber</a>
           </div>
           <ul class="hidden sm:flex gap-8">
             <li>Community</li>
@@ -19,8 +19,8 @@
             <li>Features</li>
           </ul>
           <div class="hidden sm:flex items-center gap-8">
-            <a href="#" class="font-bold">Sign In</a>
-            <button class="bg-indigo-700 text-white">Sign Up</button>
+            <a href="/fiber/auth/" class="font-bold">Sign In</a>
+            <button @click="goToAuth" class="main-bg text-white">Sign Up</button>
           </div>
           <div class="block sm:hidden cursor-pointer" @click="toggleNav">
             <svg class="text-black dark:text-white transition-colors duration-1000" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,13 +28,13 @@
             </svg>
           </div>
       </div>
-      <div class="sm:hidden text-left pt-4" id="mobile-nav" style="display: none;">
+      <div class="sm:hidden text-left pt-4 transition-all duration-150" id="mobile-nav" style="opacity: 0; height: 0;">
         <ul class="flex flex-col gap-2">
           <li>Community</li>
           <li>Pricing</li>
           <li>Features</li>
           <li>Sign In</li>
-          <li>Sign Up</li>
+          <li><a href="/fiber/auth/">Sign Up</a></li>
         </ul>
       </div>
     </nav>
@@ -54,7 +54,7 @@
         <h1 class="heading">Create your portfolio in minutes.</h1>
         <p class="text-left text-lg dark:text-slate-100">With Fiber, you can setup your own personal portfolio in minutes with dozens of premade, beautiful templates.</p>
         <div class="flex flex-col gap-4 sm:flex-row sm:gap-8 items-center">
-          <button class="bg-indigo-700 text-white self-stretch lg:self-start">Start Free Trial</button>
+          <button class="main-bg text-white self-stretch lg:self-start">Start Free Trial</button>
           <a href="#" class="underline main-text font-bold">View Examples</a>
         </div>
         <ul class="flex flex-col sm:flex-row gap-2 sm:gap-4">
@@ -92,7 +92,7 @@
         </div>
       </div>
     </section>
-    <section id="portfolio" class="text-left text-white my-16 pt-8 px-8 lg:pt-3 lg:px-12 bg-indigo-700 rounded-lg flex flex-col lg:flex-row gap-4 items-center">
+    <section id="portfolio" class="text-left text-white my-16 pt-8 px-8 lg:pt-3 lg:px-12 main-bg rounded-lg flex flex-col lg:flex-row gap-4 items-center">
       <div class="flex flex-col gap-4">
         <h1 class="heading">Diversify your portfolio.</h1>
         <p class="w-[95%] lg:w-[75%] font-light">Create an even more impressive portfolio by creating case studies for your projects. Simply follow our step-by-step guide.</p>
@@ -103,7 +103,7 @@
       </div>
     </section>
     <section id="testimonial" class="flex flex-col lg:flex-row gap-6">
-      <div class="flex flex-col gap-4 text-left border border-slate-300 dark:border-none dark:bg-indigo-600 rounded p-5 mb-10 lg:mb-0 transition-colors duration-1000 ">
+      <div class="flex flex-col gap-4 text-left border border-slate-300 dark:border-none dark:bg-indigo-500 rounded p-5 mb-10 lg:mb-0 transition-colors duration-1000 ">
         <div class="flex items-center gap-3">
           <img class="h-10 rounded-full" src="./assets/User_Avatar.svg" alt="">
           <div>
@@ -114,7 +114,7 @@
         <p class="w-[95%]">Setting up my portfolio with Fiber took no more than 10 minutes. Since then, my portfolio has attracted a lot of clients and made me more than $100k.</p>
         <button class="bg-transparent text-indigo-700 font-semibold border-slate-300 dark:border-slate-400 dark:text-white hover:scale-105 transition-colors duration-1000 ">View Sarah's Portfolio</button>
       </div>
-      <div class="flex flex-col gap-4 text-left border border-slate-300 dark:border-none dark:bg-indigo-600 rounded p-5 mb-10 lg:mb-0 transition-colors duration-1000 ">
+      <div class="flex flex-col gap-4 text-left border border-slate-300 dark:border-none dark:bg-indigo-500 rounded p-5 mb-10 lg:mb-0 transition-colors duration-1000 ">
         <div class="flex items-center gap-3">
           <img class="h-10 rounded-full" src="./assets/User_Avatar_2.svg" alt="">
           <div>
@@ -125,7 +125,7 @@
         <p class="w-[95%]">I have been getting A LOT of leads ever since I used Fiber's premade templates, now I just need to work on my case studies and I'll be ready to go!</p>
         <button class="bg-transparent text-indigo-700 font-semibold border-slate-300 dark:border-slate-400 dark:text-white hover:scale-105 transition-colors duration-1000 ">View Mathew's Portfolio</button>
       </div>
-      <div class="flex flex-col gap-4 text-left border border-slate-300 dark:border-none dark:bg-indigo-600 rounded p-5 transition-colors duration-1000 ">
+      <div class="flex flex-col gap-4 text-left border border-slate-300 dark:border-none dark:bg-indigo-500 rounded p-5 transition-colors duration-1000 ">
         <div class="flex items-center gap-3">
           <img class="h-10 rounded-full" src="./assets/User_Avatar_32.svg" alt="">
           <div>
@@ -218,16 +218,25 @@
 footer > div > ul > li > a {
   @apply font-light;
 }
+.main-bg {
+  @apply bg-indigo-700 dark:bg-indigo-500 transition-colors duration-1000;
+}
 </style>
 <script setup>
 import { onMounted } from 'vue';
 const toggleNav = () => {
   const nav = document.querySelector('#mobile-nav');
-  if (nav.style.display == 'none') {
-    nav.style.display = ''
+  console.log(nav.style.opacity);
+  if (nav.style.opacity == 0) {
+    nav.style.opacity = 1
+    nav.style.height = 'auto'
   } else {
-    nav.style.display = 'none'
+    nav.style.opacity = 0
+    nav.style.height = 0
   }
+}
+const goToAuth = () => {
+  window.location.href = '/fiber/auth/'
 }
 const toggleDark = () => {
   const darkIcon = document.querySelector('#dark-icon');
